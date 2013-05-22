@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130522011220) do
+ActiveRecord::Schema.define(:version => 20130522011341) do
 
   create_table "authors", :force => true do |t|
     t.string   "first_name", :null => false
@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(:version => 20130522011220) do
   end
 
   create_table "posts", :force => true do |t|
-    t.string   "title"
-    t.text     "content"
+    t.string   "title",      :null => false
+    t.string   "content",    :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
