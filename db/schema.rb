@@ -11,11 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130522004116) do
+ActiveRecord::Schema.define(:version => 20130522005457) do
 
   create_table "authors", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
+    t.string   "first_name", :null => false
+    t.string   "last_name",  :null => false
     t.string   "email"
     t.string   "twitter"
     t.datetime "created_at", :null => false
